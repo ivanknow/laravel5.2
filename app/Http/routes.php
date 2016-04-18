@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', "PagesController@home");
+
+/*Route::get('/', function () {
   $people = ['Filipe','Bruno','Lucas'];
   //  return view('welcome',['people'=>$people]);
   //return view('welcome')->with('people',$people);
@@ -24,4 +26,4 @@ Route::get('/about', function () {
 
 Route::get('/string', function () {
     return "Echo";
-});
+});*/
