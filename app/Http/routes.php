@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $people = ['Filipe','Bruno','Lucas'];
+  //  return view('welcome',['people'=>$people]);
+  //return view('welcome')->with('people',$people);
+  return view('welcome')->withPeople($people);
 });
 
 Route::get('/about', function () {

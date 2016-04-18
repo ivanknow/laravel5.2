@@ -36,10 +36,17 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
+        @if(empty($people))
+        Ngm aqui
+        @else
+        Tem gente aqui
+        @endif
+
+
+                @foreach ($people as $person)
+                  <li>{{$person}}</li>
+                @endforeach
+
+
     </body>
 </html>
