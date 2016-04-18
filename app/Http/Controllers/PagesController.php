@@ -13,6 +13,11 @@ class PagesController extends Controller
 
         $people = ['Filipe','Bruno','Lucas'];
          return view('welcome',['people'=>$people]);
-        
+
+    }
+
+    public function about()
+    {
+      return view('pages.about');
     }
 }

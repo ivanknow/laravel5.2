@@ -12,7 +12,7 @@
 */
 
 Route::get('/', "PagesController@home");
-
+Route::get('/about', "PagesController@about");
 /*Route::get('/', function () {
   $people = ['Filipe','Bruno','Lucas'];
   //  return view('welcome',['people'=>$people]);
