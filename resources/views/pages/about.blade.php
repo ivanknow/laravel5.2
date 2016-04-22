@@ -1,5 +1,9 @@
 @extends('pages.layout')
 
+@section('title')
+Ola gente
+@stop
+
 @section('body')
-Ola coxinhas
+Ola gente
 @stop
