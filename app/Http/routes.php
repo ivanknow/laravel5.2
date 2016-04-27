@@ -14,10 +14,13 @@
 Route::get('/', "PagesController@home");
 Route::get('/about', "PagesController@about");
 
+
 Route::get('cards', "CardsController@index");
+//Route::get('cards/{id}', "CardsController@show");
+Route::get('cards/{card}', "CardsController@show");
 /*Route::get('cards/create', "CardsController@create");
 Route::post('cards', "CardsController@store");
-Route::get('cards/id', "CardsController@show");
+
 Route::get('cards/id/edit', "CardsController@edit");
 Route::put('cards/id/edit', "CardsController@update");
 Route::delete('cards/id/edit', "CardsController@delete");*/
